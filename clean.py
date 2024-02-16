@@ -23,5 +23,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     cleaned = clean(args.input1, args.input2)
+    print("the shape of the output file:", cleaned.shape)
     cleaned.to_csv(args.output, index=False)
     print("Data cleaning completed.")
